@@ -1,0 +1,34 @@
+{
+  "name": "breezy-pdf-lite-client",
+  "version": "0.0.1",
+  "description": "Javascript client for breezy-pdf-lite, an HTML -> PDF service powered by Google Chrome",
+  "main": "index.js",
+  "repository": "git@github.com:danielwestendorf/breezy-pdf-lite-client-js.git",
+  "author": "Daniel Westendorf <daniel@prowestech.com>",
+  "license": "GNUv3",
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "eslint": "^4.19.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "node-fetch": "^2.1.1",
+    "nyc": "^11.6.0",
+    "teenytest": "^5.1.1",
+    "testdouble": "^3.5.2"
+  },
+  "scripts": {
+    "test": "teenytest 'test/**/*-test.js' --helper test/helper.js && ./node_modules/.bin/eslint *.js, **/**.js",
+    "testncov": "nyc --reporter=lcov --reporter=text teenytest 'test/**/*-test.js' --helper test/helper.js && ./node_modules/.bin/eslint *.js, **/**.js"
+  },
+  "teenytest": {
+    "timeout": 10000
+  },
+  "dependencies": {
+    "es6-promise": "^4.2.4",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
