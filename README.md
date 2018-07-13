@@ -4,8 +4,6 @@
 
 A javascript client for [BreezyPDFLite](https://github.com/danielwestendorf/breezy-pdf-lite), a one-click-to-deploy microservice for converting HTML to PDF with Google Chrome. Send the library a chunk of HTML, get a PDF of it back. Configure how the PDF is rendered via [`meta` tags](https://github.com/danielwestendorf/breezy-pdf-lite#2-configure-with-meta-tags-optional) in the HTML.
 
-Use pragmatically, or as a Express.js Middleware (TODO).
-
 ## Installation
 
 ```sh
